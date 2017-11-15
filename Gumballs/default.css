@@ -1,0 +1,51 @@
+#content {
+	display: flex;
+	justify-content: flex-start
+}
+
+#left-side {
+	width: 60%;
+}
+
+#right-side {
+	width: 40%;
+}
+
+#left-side tr {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#left-side td {
+
+	border: 1px solid black;
+	margin: 5px;
+}
+
+#left-side td > div {
+	display: flex;
+	flex-direction: column;
+}
+
+#left-side div > img {
+	max-width: 220px;
+	border: 1px solid black;
+}
+
+#left-side div > p {
+	width: 100%;
+	border: 1px solid black;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#right-side table,
+#right-side tr,
+#right-side td {
+	border: 1px solid black;
+}
+
+#right-side td img {
+	height: 220px;
+}
