@@ -3,3 +3,8 @@
 
 # Image
 *.png
+
+# Folder
+appserv
+cgi-bin
+phpMyAdmin
