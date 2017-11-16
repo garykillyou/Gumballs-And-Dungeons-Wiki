@@ -2,33 +2,17 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="default.css">
-
+	<title>Aoluwei's Blade List</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="Faction.css">
+	<script charset="utf-8" type="text/javascript" src="Faction.js"></script>
 </head>
 
-<body>
-    <script>
-        var xmlhttp, myObj, x, txt = "";
-        xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                myObj = JSON.parse(this.responseText);
-                txt += "<table><tr>"
-                for (x in myObj) {
-                    txt += "<td><div><img src='" + myObj[x].img_ad + "'>";
-                    txt += "<p>" + myObj[x].name + "</p></div></td>";
-                }
-                txt += "</tr></table>"
-                document.getElementById("left-side").innerHTML = txt;
-            }
-        };
-        xmlhttp.open("GET", "Aoluwei's Blade List.json", true);
-        xmlhttp.send();
-    </script>
+<body onload="getGumballs()">
 
-    <div id="content">
-        <div id="left-side"></div>
-    </div>
+	<div id="content">
+		<div id="left-side"></div>
+	</div>
 
 
 
