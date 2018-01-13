@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="readGumballs.css">
+	<script charset="utf-8" type="text/javascript" src="readGumballs.js"></script>
+</head>
+
+<body>
+
+	<div id="formGroup">
+		<form id="form1" action="readGumballs.php" method="post">
+			website:<input type="url" name="website"> facion:
+			<input type="text" name="faction">
+			<br><input type="submit">
+		</form>
+
+		<form id="form2" action="insertImgSite.php" method="post">
+			img_site_list:<input type="text" name="img_site_list"> gumball_name_list:
+			<input type="text" name="gumball_name_list"> faction:
+			<input type="text" name="faction">
+			<br><input type="submit">
+		</form>
+
+		<form id="form3">
+			content:<textarea name="content" dirname="content.dir"></textarea>
+			<div>
+				<input type="radio" name="function" value="getFateTable" checked="checked"> getFateTable
+			</div>
+			<div>
+				<input type="radio" name="function" value="fuck"> fuck
+			</div>
+			<br><input type="button" value="send" onclick="getFateTable()">
+		</form>
+	</div>
+
+	<br>
+
+	<div id=text1>
+		text1
+	</div>
+	<div id=text2>
+		text2
+	</div>
+	<div id=text3>
+		text3
+	</div>
+
+</body>
+
+</html>

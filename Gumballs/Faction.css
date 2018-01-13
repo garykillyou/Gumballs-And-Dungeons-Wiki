@@ -23,12 +23,15 @@
 }
 
 #left-side td > div {
+	width: 200px;
+	height: 230px;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-end;
 }
 
-#left-side div > img {
-	border: 1px solid black;
+#left-side td div > img {
+	width: 100%;
 }
 
 #left-side div > p {
@@ -44,6 +47,26 @@
 	border: 1px solid black;
 }
 
-#right-side td img {
-	height: 220px;
+#right-side table {
+	position: fixed;
+	width: 30%;
+	top: 20px;
+	right: 100px;
+}
+
+#right-side .second-row td {}
+
+#right-side .second-row td img {
+	display: block;
+	margin: auto;
+	height: 300px;
+}
+
+.gContent {
+	width: 33%;
+	text-align: center;
+}
+
+#gName {
+	font-size: 50px;
 }

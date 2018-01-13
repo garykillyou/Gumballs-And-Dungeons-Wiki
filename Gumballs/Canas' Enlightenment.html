@@ -8,44 +8,42 @@
 	<script charset="utf-8" type="text/javascript" src="Faction.js"></script>
 </head>
 
-<body onload="getGumballs()">
+<body title="canas" onload="getGumballs()">
 
 	<div id="content">
 		<div id="left-side"></div>
-		<div id=right-side>
+		<div id="right-side">
 			<table>
 				<tr>
-					<td colspan="2">名稱
+					<td id="gName" class="gContent" colspan="3">牧師
+					</td>
+				</tr>
+				<tr class="second-row">
+					<td colspan="3">
+						<img id="gImg" src="Canas'%20Enlightenment/suit/01Priest.png">
 					</td>
 				</tr>
 				<tr>
-					<td rowspan="3">
-						<img src="https://i.imgur.com/ECqReW1.png">
-					</td>
-					<td>
+					<td class="gContent">
 						<div>初始星數</div>
-						<div>1</div>
+						<div id="gStarNum">1</div>
 					</td>
-				</tr>
-				<tr>
-					<td>
+					<td class="gContent">
 						<div>陣營</div>
-						<div>幹</div>
+						<div id="gFaction">卡納斯的啟示</div>
 					</td>
-				</tr>
-				<tr>
-					<td>
+					<td class="gContent">
 						<div>系別</div>
-						<div>戰鬥系</div>
+						<div id="gType">魔法系</div>
 					</td>
 				</tr>
 				<tr>
-					<td>天賦</td>
-					<td></td>
+					<td class="gContent">天賦</td>
+					<td id="gTalent" colspan="2">所有岡布奧施放【治療術】時，提升-/10%/15%/20%/25%/30%效果，並清除中毒及燃燒狀態。</td>
 				</tr>
 				<tr>
-					<td>專屬技</td>
-					<td></td>
+					<td class="gContent">專屬技</td>
+					<td id="gSkill" colspan="2">牧師岡布奧救治過無數傷者，對各類生物的身體構造瞭然於胸。因此，在施放恢復類魔法時，額外獲得15%/30%/45%/60%/75%效果加成。出戰時，初始攜帶5張【治療術】每層獲得1張【治療術】</td>
 				</tr>
 			</table>
 

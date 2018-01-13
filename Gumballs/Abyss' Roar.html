@@ -8,44 +8,42 @@
 	<script charset="utf-8" type="text/javascript" src="Faction.js"></script>
 </head>
 
-<body onload="getGumballs()">
+<body title="abyss" onload="getGumballs()">
 
 	<div id="content">
 		<div id="left-side"></div>
-		<div id=right-side>
+		<div id="right-side">
 			<table>
 				<tr>
-					<td colspan="2">名稱
+					<td id="gName" class="gContent" colspan="3">吸血伯爵
+					</td>
+				</tr>
+				<tr class="second-row">
+					<td colspan="3">
+						<img id="gImg" src="Abyss' Roar/suit/01Vampire.png">
 					</td>
 				</tr>
 				<tr>
-					<td rowspan="3">
-						<img src="https://i.imgur.com/ECqReW1.png">
-					</td>
-					<td>
+					<td class="gContent">
 						<div>初始星數</div>
-						<div>1</div>
+						<div id="gStarNum">1</div>
 					</td>
-				</tr>
-				<tr>
-					<td>
+					<td class="gContent">
 						<div>陣營</div>
-						<div>幹</div>
+						<div id="gFaction">深淵的咆哮</div>
 					</td>
-				</tr>
-				<tr>
-					<td>
+					<td class="gContent">
 						<div>系別</div>
-						<div>戰鬥系</div>
+						<div id="gType">戰鬥系</div>
 					</td>
 				</tr>
 				<tr>
-					<td>天賦</td>
-					<td></td>
+					<td class="gContent">天賦</td>
+					<td id="gTalent" colspan="2">所有岡布奧施放【吸能術】時，提升25%效果，並附帶吸魔效果。</td>
 				</tr>
 				<tr>
-					<td>專屬技</td>
-					<td></td>
+					<td class="gContent">專屬技</td>
+					<td id="gSkill" colspan="2">吸血伯爵岡布奧在攻擊敵人時，50%概率吸取其鮮血，將所造成傷害的50%恢復到生命值（對亡靈、元素等無生命敵人無效），出戰時，初始攜帶3張【吸能術】，施放【吸能術】不受捲軸階位限制</td>
 				</tr>
 			</table>
 

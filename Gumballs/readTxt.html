@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script>
+		function readTxt() {
+			var xhttp1 = new XMLHttpRequest();
+
+			xhttp1.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("text1").innerHTML = this.responseText;
+				}
+			};
+			xhttp1.open("GET", "list1.txt", true);
+			xhttp1.send();
+
+			var xhttp2 = new XMLHttpRequest();
+			xhttp2.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("text2").innerHTML = this.responseText;
+				}
+			};
+			xhttp2.open("GET", "list2.txt", true);
+			xhttp2.send();
+		}
+
+		function readTxt2() {
+			var t1 = document.getElementById("text1").innerHTML.split("\n");
+			var t2 = document.getElementById("text2").innerHTML.split("\n");
+
+			alert("t1: " + t1.length);
+			alert("t2: " + t2.length);
+			var content = "";
+			/*for (i = 0; i < t1.length; i++) {
+				alert(t1[i]);
+			}*/
+
+			for (var i = 0, j = 0; i < t1.length; i++) {
+				content = content + t1[i];
+				if (j < t2.length) {
+					content = content + t2[j];
+					j++;
+				}
+			}
+			document.getElementById("text3").innerHTML = content;
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<button onclick="readTxt()" style="height: 200px; width: 50%; font-size: 100px;">
+		readTxt
+	</button>
+
+	<button onclick="readTxt2()" style="height: 200px; width: 50%; font-size: 100px;">
+		readTxt
+	</button>
+	<div id=text1>
+		text1
+	</div>
+	<div id=text2>
+		text2
+	</div>
+	<div id=text3>
+		text3
+	</div>
+
+</body>
+
+</html>
